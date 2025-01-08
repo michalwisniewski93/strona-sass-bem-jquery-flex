@@ -1,0 +1,14 @@
+section.home{
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #ddd;
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home__slogan{
+        font-family: 'Ubuntu', sans-serif;        
+    }
+}

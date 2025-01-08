@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  max-width: 1900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(31, 159, 31);
+}
+header .logo {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  font-size: 30px;
+  margin: 5px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+header .burgericon {
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  font-size: 30px;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 1024px) {
+  header .burgericon {
+    display: none;
+  }
+}
+
+.menu {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.menu .menu__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(31, 159, 31);
+}
+.menu .menu__list .menu__item {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.menu .menu__list .menu__item .menu__item__link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.menu .menu__list .menu__item .menu__item__link:hover {
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .menu .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home {
+  max-width: 1900px;
+  margin: 0 auto;
+  background-color: #ddd;
+  -webkit-box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.home .home__slogan {
+  font-family: "Ubuntu", sans-serif;
+}
+
+section.details {
+  max-width: 1900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+section.details .details__name {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: rgb(31, 159, 31);
+}
+section.details .details__detail {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  height: 280px;
+}
+section.details .details__detail .details__image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+section.details .details__detail .details__desc {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 159, 31);
+}
+
+.about {
+  background-color: rgb(31, 159, 31);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1900px;
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about .about__name {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.about .about__desc {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: 100;
+  text-align: justify;
+}
+.about .about__photo {
+  border-radius: 14px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  width: 300px;
+}
+.about .about__photo .about__img {
+  padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .about .about__desc {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .about .about__photo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+.pricelist {
+  max-width: 1900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9px;
+}
+.pricelist .pricelist__name {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: rgb(31, 159, 31);
+}
+.pricelist .pricelist__item {
+  border: 1px solid rgb(31, 159, 31);
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pricelist .pricelist__packet {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: rgb(31, 159, 31);
+}
+.pricelist .pricelist__individual {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+.pricelist .pricelist__btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(31, 159, 31);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.pricelist .pricelist__btn:hover {
+  background-color: black;
+}
+
+section.contact {
+  max-width: 1900px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  background-color: rgb(31, 159, 31);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+section.contact .contact__name {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.contact .contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+section.contact .contact__form label, section.contact .contact__form input, section.contact .contact__form textarea {
+  display: block;
+}
+section.contact .contact__form input, section.contact .contact__form textarea {
+  width: 300px;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+section.contact .contact__form input {
+  height: 30px;
+}
+section.contact .contact__form textarea {
+  resize: none;
+  height: 150px;
+}
+section.contact .contact__form button {
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+section.contact .contact__form button:hover {
+  background-color: black;
+  color: white;
+}
+section.contact .contact__data {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media (max-width: 1024px) {
+  section.contact .contact__form, section.contact .contact__data {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  section.contact .contact__data {
+    padding: 10px;
+  }
+  section.contact input, section.contact textarea {
+    width: 80%;
+  }
+}
+footer.footer {
+  background-color: black;
+  height: 10vh;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+footer.footer .footer__desc {
+  line-height: 10vh;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */

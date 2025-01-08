@@ -1,0 +1,44 @@
+.pricelist{
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    .pricelist__name{
+        flex-basis: 100%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        color: $maincolor;
+    }
+    .pricelist__item{
+        border: 1px solid $maincolor;
+        flex-basis: 28%;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .pricelist__packet{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        color: $maincolor;
+    }
+    .pricelist__individual{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .pricelist__btn{
+        font-family: 'Ubuntu', sans-serif;
+        background-color: $maincolor;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .pricelist__btn:hover{
+        background-color: black;
+    }
+}

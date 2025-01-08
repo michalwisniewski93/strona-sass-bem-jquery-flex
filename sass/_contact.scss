@@ -1,0 +1,77 @@
+section.contact{
+    max-width: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    background-color: $maincolor;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    .contact__name{
+        flex-basis: 100%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__form{
+        
+        display: flex;
+        justify-content: center;
+        flex-basis: 50%;
+        label, input, textarea{
+            display: block;
+        }
+        input, textarea{
+            width: 300px;
+            font-size: 22px;
+            font-weight: 100;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+            border: 1px solid transparent;
+        }
+        input{
+            height: 30px;
+        }
+        textarea{
+            resize: none;
+            height: 150px;
+        }
+        button{
+            font-family: 'Ubuntu', sans-serif;
+            background-color: white;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            color: black;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+    .contact__data{
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width: 1024px){
+    section.contact{
+        .contact__form, .contact__data{
+            flex-basis: 100%;
+        }
+        .contact__data{
+            padding: 10px;
+        }
+        input,textarea{
+            width: 80%;
+        }
+    }
+}

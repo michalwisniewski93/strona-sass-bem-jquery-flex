@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.menu{
+    max-width: 1900px;
+    margin: 0 auto;
+    .menu__list{
+        list-style: none;
+        
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $maincolor;
+        .menu__item{
+            flex-basis: 10%;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            .menu__item__link{
+                color: $linkcolor;
+                text-decoration: none;
+            }
+            .menu__item__link:hover{
+                font-weight: 300;
+            }
+        }
+    }
+   
+
+}
+@media(max-width: 1024px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width: 1024px){
+    .menu{
+        .menu__list{
+            flex-direction: column;
+        }
+    }
+}
+
+.active{
+    display: flex;
+}

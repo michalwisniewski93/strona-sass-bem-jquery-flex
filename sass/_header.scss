@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    background-color: $maincolor;
+    .logo{
+        flex-basis: 90%;
+        font-size: 30px;
+        margin: 5px;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .burgericon{
+        flex-basis: 5%;
+        font-size: 30px;
+        padding-top: 5px;
+        color: $linkcolor;
+    }
+    @media(min-width: 1024px){
+        .burgericon{
+            display: none;
+        }
+    }
+}
+
+
+
+

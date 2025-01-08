@@ -1,0 +1,42 @@
+.about{
+    background-color: $maincolor;
+    display: flex;
+    max-width: 1900px;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    .about__name{
+        flex-basis: 100%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+    .about__desc{
+        flex-basis: 70%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        color: white;
+        font-weight: 100;
+        text-align: justify;
+    }
+    .about__photo{
+        border-radius: 14px;
+        flex-basis: 30%;
+        width: 300px;
+        .about__img{
+            padding-left: 10px;
+        }
+        
+    }
+}
+
+@media(max-width: 1024px){
+    .about{
+        .about__desc{
+            flex-basis: 100%;
+        }
+        .about__photo{
+            flex-basis: 100%;
+        }
+    }
+}
